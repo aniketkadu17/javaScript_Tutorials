@@ -32,3 +32,23 @@ if (userLogin == "username") {
 } else{
     console.log("No Such user found")
 }
+
+
+// Using Logical operators in conditions
+// && - AND operator
+// || - OR operator
+
+let isVerified = true
+let isloggedIn = true
+let hasPaymentToken = false
+let isGuest = true
+
+if (isVerified && isloggedIn && hasPaymentToken){
+    console.log("Welcome message to User")
+    console.log("Granting access to watch videos")
+} else if (isVerified && isloggedIn && isGuest){
+    console.log("Welcome message to Guest")
+    console.log("Allowing to watch only preview videos")
+} else {
+    console.log("Contact Admin")
+}
