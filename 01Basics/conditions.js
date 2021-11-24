@@ -52,3 +52,26 @@ if (isVerified && isloggedIn && hasPaymentToken){
 } else {
     console.log("Contact Admin")
 }
+
+
+// Var and let keyword and its difference and uses
+
+let iAMGlobal = "I am a Global Variable"
+
+if (true) {
+    let iamLocal = "I am local variable"
+    console.log(iAMGlobal)
+    console.log(iamLocal)
+}
+/* This is not allowed 
+as 'let' keyword allows variavble accessable within a Block only console.log(iamLocal)*/
+
+// so we use 'var'
+
+if (true) {
+    var nowIamGlobal = "I am local variable i am accessable any where"
+    iAMGlobal = "I can also change values within the linmits of code block"
+    console.log(iAMGlobal)
+    console.log(nowIamGlobal)
+}
+console.log(nowIamGlobal)
