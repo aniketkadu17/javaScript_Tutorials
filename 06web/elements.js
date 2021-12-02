@@ -5,6 +5,15 @@ myElement3.forEach(function(p) {
 })
 
 const myNewPara = document.createElement('p')
-myNewPara.textContent = "Created new element"
-
+myNewPara.textContent = "Created new element using js"
 document.querySelector('body').appendChild(myNewPara)
+
+
+const myNewhead = document.createElement('h1')
+myNewhead.textContent = "Created new 'h1' element using js"
+document.querySelector('body').appendChild(myNewhead)
+
+
+const myNewLine = document.createElement('em')
+myNewLine.textContent = "Created italic element using js"
+document.querySelector('body').appendChild(myNewLine)
