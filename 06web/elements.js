@@ -17,3 +17,12 @@ document.querySelector('body').appendChild(myNewhead)
 const myNewLine = document.createElement('em')
 myNewLine.textContent = "Created italic element using js"
 document.querySelector('body').appendChild(myNewLine)
+
+// handling button
+document.querySelector('button').addEventListener('click', (event) => {
+    //console.log(" Button is pressed")
+    //console.log(event)
+
+    // It will change button message
+    event.target.textContent = "I was clicked";
+})
