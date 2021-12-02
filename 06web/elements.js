@@ -26,3 +26,18 @@ document.querySelector('button').addEventListener('click', (event) => {
     // It will change button message
     event.target.textContent = "I was clicked";
 })
+ 
+// tracking input forms
+
+// change
+/*
+document.querySelector('#myform').addEventListener('change', () => {
+    console.log(event.target.value);
+})
+*/
+
+
+// input value live tracking
+document.querySelector('#myform').addEventListener('input', () => {
+    console.log(event.target.value);
+})
