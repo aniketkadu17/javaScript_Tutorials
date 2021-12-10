@@ -26,3 +26,23 @@ console.log(ask.getFullName())
 
 abc.editUserData("hellllllo","Everybody",25)
 console.log(abc.getFullName())
+
+
+// inheritance with Method overloading
+class Admin extends UserData {
+    constructor(fname,lname,age,permissions) {
+        super(fname,lname,age)
+        this.permissions = permissions
+    }
+
+    getFullName () {
+        return `My Name is ${this.fname} ${this.lname}.
+        and I am ${this.age} years old
+        I am from Admin Department with ${this.permissions} access.`
+    }
+}
+const adm = new Admin('A', 'K', 23, "Limited")
+console.log(adm)
+
+console.log(adm.getFullName())
+console.log(ask.getFullName())
